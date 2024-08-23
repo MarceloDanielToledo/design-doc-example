@@ -1,240 +1,242 @@
 
-# Stock Management System
+# Sistema de gestión de stock
 
-## Authors
+## Autores
 
 - [@MarceloDanielToledo](https://github.com/MarceloDanielToledo)
 
-## Context
+## Contexto
 
-Currently, the product factory faces significant limitations due to its outdated stock management system. This system is not only rigid and difficult to adapt but also operates solely on an old version of Windows and does not integrate well with the factory's current processes. These deficiencies are causing inefficiencies in inventory management, such as frequent stockouts, excess inventory, and limited visibility of material flow, which negatively impacts daily operations and increases costs.
+Actualmente, la fábrica de productos se enfrenta a limitaciones significativas debido a su sistema de gestión de stock, que ha quedado obsoleto. Este sistema, además de ser rígido y difícil de adaptar, solo funciona en una versión antigua de Windows y no se integra adecuadamente con los procesos actuales de la fábrica. Estas deficiencias están generando ineficiencias en la gestión de inventarios, como rupturas de stock frecuentes, exceso de inventario y una visibilidad limitada del flujo de materiales, lo que impacta negativamente en la operación diaria y eleva los costos.
 
-It is necessary to implement a new stock management system that addresses the current and future needs of the factory. This system must be flexible and cross-platform, accessible from any device with a web browser. It will provide real-time data, seamless integrations with other systems, and the ability to customize functions according to the specific needs of the factory, thereby facilitating better decision-making.
+Es necesario implementar un nuevo sistema de gestión de stock que responda a las necesidades actuales y futuras de la fábrica. Este sistema debe ser flexible y multiplataforma, accesible desde cualquier dispositivo con un navegador web. Con él, se podrán obtener datos en tiempo real, integraciones fluidas con otros sistemas y la posibilidad de personalizar funciones según las necesidades específicas de la fábrica, facilitando así una mejor toma de decisiones.
 
-This system will benefit production managers, warehouse staff, and the purchasing team by providing them with a more modern and efficient tool that will support the factory's growth and evolution.
+Este sistema beneficiará a los gerentes de producción, responsables de almacén y al equipo de compras, al proporcionarles una herramienta más moderna y eficiente que acompañará el crecimiento y la evolución de la fábrica.
 
-## Goals
+## Objetivos
 
-- Improve accessibility and flexibility: Facilitate access to the system from any device with a web browser.
+- Mejorar la accesibilidad y flexibilidad: Facilitar el acceso al sistema desde cualquier dispositivo con navegador web.
 
-- Integrate with other systems: Ensure seamless synchronization with the purchasing module and other existing systems.
+- Integrar con otros sistemas: Asegurar sincronización fluida con el módulo de compras y otros sistemas existentes.
 
-- Facilitate decision-making: Provide reports and predictive analytics for better planning.
+- Facilitar la toma de decisiones: Ofrecer reportes y análisis predictivos para una mejor planificación.
 
-- Optimize management metrics: Improve response times and operational efficiency in inventory management.
+- Optimizar métricas de gestión: Mejorar tiempos de respuesta y eficiencia operativa en la gestión de inventarios.
 
-## Non-Goals
+## Límites
 
-- No functionalities will be developed outside the scope of stock management.
+- El proyecto se centra únicamente en la gestión de stock y no incluirá módulos adicionales como contabilidad o gestión de recursos humanos.
 
-- The system will not address the upgrade or replacement of existing hardware in the factory, focusing solely on stock management software.
+- El sistema no abordará la actualización o reemplazo del hardware existente en la fábrica, solo se enfocará en el software de gestión de stock.
 
-- No additional features unrelated to stock management will be created, such as new functionalities for other departments or processes not defined in the scope.
+- No se crearán características adicionales que no estén relacionadas directamente con la gestión de stock, como nuevas funcionalidades para otros departamentos o procesos no definidos en el alcance.
 
-- Training will be limited to basic user training for the new system; extensive training programs or support for other business processes will not be included.
+- La formación será limitada a la capacitación básica para el uso del nuevo sistema; no se incluirán programas de formación extensivos ni soporte para otros procesos empresariales.
 
-## Milestones
+## Principales etapas
 
-**Requirement Definition** - 08/30/24
+**Definición de requisitos** - 08/30/24
 
-- Meeting to define and agree on system requirements with the client.
+- Reunión para definir y acordar los requisitos del sistema con el cliente.
 
-**Design and Prototype** - 09/15/24
+**Diseño y Prototipo** - 09/15/24
 
-- Presentation of the initial design and prototype to obtain client feedback.
+- Presentación del diseño y prototipo inicial para obtener feedback del cliente.
 
-**Development of Key Features** - 10/15/24
+**Desarrollo de funcionalidades clave** - 10/15/24
 
-- Delivery of the main system functionalities.
+- Entrega de las funcionalidades principales del sistema.
 
-**Integration and Testing** - 11/15/24
+**Integración y Pruebas** - 11/15/24
 
-- System integration with other modules and testing. Meeting to review the results with the client.
+- Integración del sistema con otros módulos y realización de pruebas. Reunión para revisar los resultados con el cliente.
 
-**Deployment and Training** - 12/01/24
+**Despliegue y Capacitación** - 12/01/24
 
-- System implementation and basic user training.
+- Implementación del sistema y capacitación básica para los usuarios.
 
-**Final Review and Adjustments** - 12/15/24
+**Revisión final y Ajustes** - 12/15/24
 
-- Final review with the client to make adjustments based on feedback.
-
-
-## Existing Solution
-
-The factory currently uses a stock management system developed in FoxPro. This outdated system is limited in terms of functionality and flexibility, making it difficult to adapt to the modern needs of the factory. Users interact with the system through a graphical interface that allows basic operations such as recording inventory entries and exits, generating reports, and viewing stock status.
-
-However, the system has several deficiencies, including limited integration with other factory processes, lack of support for updates and customizations, and compatibility issues with newer operating system versions. This situation has led to inefficient inventory management and an increasing need for a more modern and adaptable solution.
+- Revisión final con el cliente para hacer ajustes según feedback.
 
 
-## Proposed Solution
+## Solución existente
 
-The proposed solution for the new stock management system is a web application based on Blazor WebAssembly. This choice allows for a modern and flexible platform, accessible from any device with a web browser.
+Actualmente, la fábrica utiliza un sistema de gestión de stock desarrollado en FoxPro. Este sistema antiguo está limitado en términos de funcionalidad y flexibilidad, lo que dificulta su adaptación a las necesidades modernas de la fábrica. Los usuarios interactúan con el sistema a través de una interfaz gráfica que permite realizar operaciones básicas como el registro de entradas y salidas de inventario, la generación de reportes y la visualización del estado del stock.
 
-### Overview
+Sin embargo, el sistema presenta varias deficiencias, incluyendo una integración limitada con otros procesos de la fábrica, la falta de soporte para actualizaciones y personalizaciones, y problemas de compatibilidad con versiones más recientes de sistemas operativos. Esta situación ha llevado a una gestión ineficiente del inventario y a una creciente necesidad de una solución más moderna y adaptable.
 
-The system will be a Blazor WebAssembly application using SignalR. This enables a rich and dynamic user experience with a modern interface that facilitates real-time inventory management. The application will connect to a backend API to handle all operations related to inventory data.
+
+## Solución propuesta
+
+La solución propuesta para el nuevo sistema de gestión de stock es una aplicación web basada en Blazor WebAssembly. Esta elección permite una plataforma moderna y flexible, accesible desde cualquier dispositivo con un navegador web. A continuación, se detalla la solución en términos de arquitectura, funcionalidades clave y flujo de trabajo.
+
+### Visión general
+
+El sistema estará compuesto por una aplicación web interactiva que se ejecuta en el navegador del usuario utilizando Blazor WebAssembly. Esto permite una experiencia de usuario rica y dinámica, con una interfaz moderna que facilita la gestión del inventario en tiempo real. La aplicación se conectará a una API backend para manejar todas las operaciones relacionadas con los datos de inventario.
 
 ### System Architecture
 
-- **User Interface (UI)**: The web application will be developed using Blazor WebAssembly, allowing for a smooth and responsive interface. Users will be able to access the system from any device with a browser, whether on a desktop computer, tablet, or mobile phone.
+- **Interfaz de Usuario (UI):** La aplicación web se desarrollará utilizando Blazor WebAssembly, lo que permitirá una interfaz fluida y responsiva. Los usuarios podrán acceder al sistema desde cualquier dispositivo con navegador, ya sea en una computadora de escritorio, tablet o teléfono móvil.
 
-- **Backend API**: The application will connect to a RESTful API that will handle all system operations, including inventory management, report generation, and synchronization with other factory modules. This API will be built with .NET, providing robustness and scalability.
+- **API Backend:** La aplicación se conectará a una API RESTful que manejará todas las operaciones del sistema, incluyendo la gestión de inventario, generación de reportes y sincronización con otros módulos de la fábrica. Esta API estará construida con .NET, proporcionando robustez y escalabilidad.
 
-- **Database**: Inventory information will be stored in a centralized database, enabling efficient queries and secure data storage. The database will be designed to easily integrate with the API and support system operations.
+- **Base de Datos:** La información de inventario se almacenará en una base de datos centralizada, que permitirá consultas eficientes y almacenamiento seguro de los datos. La base de datos se diseñará para integrarse fácilmente con la API y soportar las operaciones del sistema.
 
-- **Authentication and Security**: The application will include authentication and authorization mechanisms to ensure that only authorized users can access and modify inventory data. Security measures will be implemented to protect the integrity and confidentiality of the data.
+- **Autenticación y Seguridad:** La aplicación incluirá mecanismos de autenticación y autorización para garantizar que solo los usuarios autorizados puedan acceder y modificar los datos de inventario. Se implementarán medidas de seguridad para proteger la integridad y confidencialidad de los datos.
 
 
-### Workflow
+### Flujo de trabajo
 
-- **Login**: Users access the system through a secure login page. Once authenticated, they are directed to the main page where they can view and manage inventory.
-- **Inventory Management**: Users can record new inventory entries and exits, adjust stock levels, and generate reports. The interface will provide a clear and up-to-date view of inventory levels and alerts about potential issues.
-- **Report Generation**: The system will allow the generation of detailed reports on inventory status, including movement history and trend analysis. Reports can be exported in various formats for review and analysis.
-- **Synchronization with Other Systems**: The application will be integrated with other factory modules, such as the purchasing system, to ensure that inventory data is always up-to-date and synchronized.
+- **Inicio de Sesión:** Los usuarios acceden al sistema mediante una página de inicio de sesión segura. Una vez autenticados, son dirigidos a la página principal donde pueden visualizar y gestionar el inventario.
 
+- **Gestión de Inventario:** Los usuarios podrán registrar nuevas entradas y salidas de inventario, ajustar niveles de stock y generar reportes. La interfaz proporcionará una vista clara y actualizada de los niveles de inventario y alertas sobre posibles problemas.
 
-## Alternative Solutions
+- **Generación de Reportes:** El sistema permitirá la generación de reportes detallados sobre el estado del inventario, incluyendo históricos de movimientos y análisis de tendencias. Los reportes se podrán exportar en varios formatos para su revisión y análisis.
 
-### Third-Party Solution
+- **Sincronización con Otros Sistemas:** La aplicación estará integrada con otros módulos de la fábrica, como el sistema de compras, para asegurar que los datos de inventario estén siempre actualizados y sincronizados.
 
-We considered the option of acquiring a stock management system from an external provider. These solutions often offer advanced functionalities and ongoing support. Examples include systems like SAP Business One or NetSuite.
 
-**Pros**:
+## Soluciones alternativas
 
-- Faster implementation due to the immediate availability of the software.
-- Continuous support and updates provided by the vendor.
-- Proven and reliable functionalities.
+### Solución de terceros
 
-**Cons**:
+Consideramos la opción de adquirir un sistema de gestión de stock de un proveedor externo. Estas soluciones suelen ofrecer funcionalidades avanzadas y soporte continuo. Ejemplos incluyen sistemas como SAP Business One o NetSuite.
 
-- High cost for licensing and subscription.
-- Less flexibility to customize according to the specific needs of the factory.
-- May require complex integration with existing systems.
+**Pros:**
 
+- Implementación más rápida debido a la disponibilidad inmediata del software.
+- Soporte y actualizaciones continuas proporcionadas por el proveedor.
+- Funcionalidades ya probadas y confiables.
 
-### Open Source Solution
+**Contras:**
 
-We evaluated the use of open-source inventory management solutions, such as Odoo or ERPNext. These platforms offer a robust foundation that can be adapted and extended according to needs.
+- Costo elevado por licencia y suscripción.
+- Menos flexibilidad para personalizar según las necesidades específicas de la fábrica.
+- Puede requerir integración compleja con los sistemas existentes.
 
-**Pros**:
 
-- Reduced or zero initial costs.
-- Flexibility to customize and adapt the software.
-- Active community that can provide support and improvements.
+### Solución de código abierto
 
-**Cons**:
+Evaluamos el uso de soluciones de gestión de inventario de código abierto, como Odoo o ERPNext. Estas plataformas ofrecen una base robusta que se puede adaptar y extender según las necesidades.
 
-- Requires technical knowledge for customization and maintenance.
-- Limited support compared to commercial solutions.
-- Possible need for additional development to integrate with other systems.
+**Pros:**
 
-### Internal Development
+- Costos iniciales reducidos o nulos.
+- Flexibilidad para personalizar y adaptar el software.
+- Comunidad activa que puede ofrecer soporte y mejoras.
 
-Developing a custom internal solution, such as the proposed Blazor WebAssembly application, tailored to the specific needs of the factory.
+**Contras:**
 
-**Pros**:
+- Requiere conocimientos técnicos para la personalización y mantenimiento.
+- Soporte limitado comparado con soluciones comerciales.
+- Posible necesidad de desarrollo adicional para integrar con otros sistemas.
 
-- Complete alignment with the factory’s requirements and processes.
-- Flexibility to modify and scale the system as needed.
-- Full control over design and functionalities.
+### Desarrollo interno
 
-**Cons**:
+Desarrollar una solución interna personalizada, como la propuesta utilizando Blazor WebAssembly, adaptada a las necesidades específicas de la fábrica.
 
-- Longer development time.
-- Requires internal resources for development and maintenance.
-- Higher initial investment compared to pre-existing solutions.
+**Pros:**
 
+- Total alineación con los requisitos y procesos de la fábrica.
+- Flexibilidad para modificar y escalar el sistema según se necesite.
+- Control completo sobre el diseño y las funcionalidades.
 
-## Testability, Monitoring and Alerting
+**Contras:**
 
-**Testing**
+- Tiempo de desarrollo más largo.
+- Requiere recursos internos para el desarrollo y mantenimiento.
+- Mayor inversión inicial en comparación con soluciones preexistentes.
 
-The solution will undergo unit, integration, and end-to-end (E2E) testing to ensure proper functionality before deployment. This will include usability testing to verify that users can interact with the system smoothly, and integration testing to ensure all functions operate correctly with other systems. Performance testing will also be conducted to ensure the system handles the expected data volume without delays.
 
-**Monitoring**
+## Pruebas, Monitoreo y Alertas
 
-Once implemented, the system will be continuously monitored to ensure stability and performance. Monitoring tools will be used to oversee system status, resource usage, and response times. This will help detect and resolve issues before they impact users.
+**Pruebas**
 
-**Alerts**
+La solución se someterá a una serie de pruebas exhaustivas para asegurar su correcto funcionamiento antes de su despliegue. Esto incluirá pruebas de usabilidad para verificar que los usuarios puedan interactuar con el sistema sin problemas, y pruebas de integración para asegurar que todas las funciones operen correctamente con otros sistemas. También se realizarán pruebas de rendimiento para asegurar que el sistema maneje el volumen de datos esperado sin retrasos.
 
-Automatic alerts will be set up to notify the support team of any anomalies or failures in the system, such as performance issues, critical errors, or system outages. Alerts will help respond quickly to any incidents and minimize impact on factory operations.
+**Monitoreo**
 
+Una vez implementado, el sistema será monitoreado continuamente para asegurar su estabilidad y rendimiento. Se utilizarán herramientas de monitoreo para supervisar el estado del sistema, el uso de recursos y el tiempo de respuesta. Esto permitirá detectar y solucionar problemas antes de que afecten a los usuarios.
 
-## Cross-Team Impact
+**Alertas**
 
-**Impact on Support and Operations:**
-The new system will require more attention from the operations team initially, as it will be crucial to ensure everything functions correctly during the transition. However, once the system is up and running, the number of issues should be lower compared to the old system.
+Se establecerán alertas automáticas para notificar al equipo de soporte sobre cualquier anomalía o fallo en el sistema, como problemas de rendimiento, errores críticos o caídas del sistema. Las alertas ayudarán a responder rápidamente a cualquier incidente y minimizar el impacto en las operaciones de la fábrica.
 
-**Cost:**
-Creating and implementing the new system will incur costs, especially initially. However, in the long run, it should save money because it will be easier to manage and will keep inventory better controlled.
+## Impacto entre Equipos
 
-**System Speed:**
-As a web application, the new system might perform slightly slower in areas with poor internet connectivity. Still, it is designed to ensure that this difference is not too noticeable.
+**Impacto en Soporte y Operaciones:**
+El nuevo sistema requerirá más atención del equipo de operaciones inicialmente, ya que será crucial asegurar que todo funcione correctamente durante la transición. Sin embargo, una vez que el sistema esté en funcionamiento, el número de problemas debería ser menor en comparación con el sistema antiguo.
 
-**Security:**
-Being a web application, it may be exposed to new security risks, such as unauthorized access attempts. Therefore, measures will be taken to ensure data protection and that only authorized personnel can access it.
+**Costo:**
+Crear e implementar el nuevo sistema incurrirá en costos, especialmente al principio. Sin embargo, a largo plazo, debería ahorrar dinero porque será más fácil de administrar y mantendrá el inventario mejor controlado.
 
-**Possible Drawbacks:**
-Users might need time to get used to the new system, which could cause some initial inconvenience. Additionally, during the transition, some temporary issues in operations might arise if not planned properly.
+**Velocidad del Sistema:**
+Como aplicación web, el nuevo sistema podría funcionar ligeramente más lento en áreas con mala conectividad a internet. Aún así, está diseñado para asegurar que esta diferencia no sea demasiado notable.
 
-**Communication with Clients:**
-The support team will need to clearly explain to clients why the change is being made and how it will benefit them. It will also be important to provide assistance and training to make the transition as smooth as possible.
+**Seguridad:**
+Al ser una aplicación web, puede estar expuesto a nuevos riesgos de seguridad, como intentos de acceso no autorizado. Por lo tanto, se tomarán medidas para garantizar la protección de los datos y que solo el personal autorizado pueda acceder a ellos.
 
+**Posibles Inconvenientes:**
+Los usuarios podrían necesitar tiempo para acostumbrarse al nuevo sistema, lo que podría causar algunos inconvenientes iniciales. Además, durante la transición, podrían surgir algunos problemas temporales en las operaciones si no se planifican adecuadamente.
 
-## Open Question
+**Comunicación con los Clientes:**
+El equipo de soporte deberá explicar claramente a los clientes por qué se está realizando el cambio y cómo les beneficiará. También será importante brindar asistencia y capacitación para que la transición sea lo más fluida posible.
 
-**Integration with Existing Systems**
 
-What level of compatibility is required with the factory’s current systems? Should we consider a complete migration or a gradual integration?
+## Preguntas Abiertas
 
-**User Training**
+**Integración con Sistemas Existentes**
 
-What is the best way to train users on the new system? Are online tutorials sufficient, or will in-person training be necessary?
+¿Qué nivel de compatibilidad se requiere con los sistemas actuales de la fábrica? ¿Deberíamos considerar una migración completa o una integración gradual?
 
-**Future Scalability**
+**Capacitación de Usuarios**
 
-How should we plan for the system’s scalability for future factory expansions? Are there critical areas that require more attention from the beginning?
+¿Cuál es la mejor manera de capacitar a los usuarios en el nuevo sistema? ¿Son suficientes los tutoriales en línea, o será necesario realizar capacitación presencial?
 
-**Customization Options**
+**Escalabilidad Futura**
 
-To what extent should the system be customizable to adapt to changes in the factory’s processes? Is it better to offer a basic set of options or allow for more extensive customization?
+¿Cómo debemos planificar la escalabilidad del sistema para futuras expansiones de la fábrica? ¿Hay áreas críticas que requieran más atención desde el principio?
 
-**Historical Data Management**
+**Opciones de Personalización**
 
-How will we handle the transition of historical data from the old system to the new one? Is it necessary to import all data or only those relevant to current operations?
+¿Hasta qué punto debe ser personalizable el sistema para adaptarse a los cambios en los procesos de la fábrica? ¿Es mejor ofrecer un conjunto básico de opciones o permitir una personalización más extensa?
 
+**Gestión de Datos Históricos**
 
-## Detailed Scoping and Timeline
+¿Cómo manejaremos la transición de los datos históricos del sistema antiguo al nuevo? ¿Es necesario importar todos los datos o solo los relevantes para las operaciones actuales?
 
-### Detailed Scope:
 
-**Phase 1: Requirements Analysis and Planning (Date: 1st week)**
+## Alcance Detallado y Cronograma
 
-- Meetings with stakeholders to define specific system requirements.
-- Preparation of the final requirements document.
+### Alcance Detallado:
 
-**Phase 2: System Design (Date: 2nd-3rd week)**
+**Fase 1: Análisis de Requisitos y Planificación (Fecha: 1ra semana)**
 
-- Design of the system architecture, including data flows and database structure.
-- Creation of mockups for the user interface.
+- Reuniones con partes interesadas para definir los requisitos específicos del sistema.
+- Preparación del documento final de requisitos.
 
-**Phase 3: Initial Development (Date: 4th-8th week)**
+**Fase 2: Diseño del Sistema (Fecha: 2da-3ra semana)**
 
-- Implementation of the basic system structure.
-- Development of critical functionalities, such as inventory management and stock tracking.
+- Diseño de la arquitectura del sistema, incluyendo flujos de datos y estructura de la base de datos.
+- Creación de maquetas para la interfaz de usuario.
 
-**Phase 4: Integration and Testing (Date: 9th-11th week)**
+**Fase 3: Desarrollo Inicial (Fecha: 4ta-8va semana)**
 
-- Integration with existing systems.
-- Conducting unit and integration tests to ensure system quality.
+- Implementación de la estructura básica del sistema.
+- Desarrollo de funcionalidades críticas, como gestión de inventario y seguimiento de stock.
 
-**Phase 5: Pilot Implementation (Date: 12th week)**
+**Fase 4: Integración y Pruebas (Fecha: 9na-11va semana)**
 
-- Initial deployment in a controlled environment.
-- Collection of feedback and adjustments based on user experience.
+- Integración con sistemas existentes.
+- Realización de pruebas unitarias e integradas para asegurar la calidad del sistema.
 
-**Phase 6: Full Deployment and Training (Date: 13th-14th week)**
+**Fase 5: Implementación Piloto (Fecha: 12va semana)**
 
-- Deployment of the system throughout the factory.
-- Training of end-users to ensure a smooth transition.
+- Implementación inicial en un entorno controlado.
+- Recopilación de feedback y ajustes basados en la experiencia del usuario.
+
+**Fase 6: Implementación Completa y Capacitación (Fecha: 13ra-14ta semana)**
+
+- Implementación del sistema en toda la fábrica.
+- Capacitación de los usuarios finales para asegurar una transición fluida.
