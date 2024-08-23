@@ -163,7 +163,7 @@ Una vez implementado, el sistema será monitoreado continuamente para asegurar s
 
 Se establecerán alertas automáticas para notificar al equipo de soporte sobre cualquier anomalía o fallo en el sistema, como problemas de rendimiento, errores críticos o caídas del sistema. Las alertas ayudarán a responder rápidamente a cualquier incidente y minimizar el impacto en las operaciones de la fábrica.
 
-## Impacto entre Equipos
+## Impacto de la solución
 
 **Impacto en Soporte y Operaciones:**
 El nuevo sistema requerirá más atención del equipo de operaciones inicialmente, ya que será crucial asegurar que todo funcione correctamente durante la transición. Sin embargo, una vez que el sistema esté en funcionamiento, el número de problemas debería ser menor en comparación con el sistema antiguo.
