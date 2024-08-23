@@ -207,9 +207,7 @@ El equipo de soporte deberá explicar claramente a los clientes por qué se est�
 ¿Cómo manejaremos la transición de los datos históricos del sistema antiguo al nuevo? ¿Es necesario importar todos los datos o solo los relevantes para las operaciones actuales?
 
 
-## Alcance Detallado y Cronograma
-
-### Alcance Detallado:
+## Alcance y Cronograma
 
 **Fase 1: Análisis de Requisitos y Planificación (Fecha: 1ra semana)**
 
