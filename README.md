@@ -31,18 +31,3 @@ Let's imagine that "x" factory is struggling with an obsolete inventory manageme
 * **Scope and Schedule:** Detailed section of dates with the current status for follow-up.
 
 > **Unlike traditional formal documentation, design docs focus on capturing the main ideas in an agile way. This facilitates the rapid understanding of requirements and allows the team to iterate on the design collaboratively.**
-
-**Translation Notes:**
-* I've tried to maintain the original meaning and tone of the text while ensuring grammatical correctness and natural-sounding English.
-* Some terms might have multiple translations depending on the specific context. For example, "retrabajos" can be translated as "rework" or "redoing". I chose "rework" as it seemed to fit the context better.
-* The term "design doc" is already widely used in the English-speaking software development community, so I kept it unchanged.
-
-**Would you like me to translate any other sections or provide more specific examples?** 
-
-**Additional suggestions:**
-* **Consider using a style guide:** Adhering to a style guide like Google's or Microsoft's can help ensure consistency in your documentation.
-* **Use headings and subheadings:** This will make your document easier to read and navigate.
-* **Add visuals:** Diagrams and flowcharts can help to illustrate complex concepts.
-* **Use a version control system:** This will allow you to track changes and collaborate with your team more effectively.
-
-**I hope this is helpful!**
